@@ -1,0 +1,768 @@
+
+  /*--------- АДАПТИВ НАЧАЛО -------------*/
+  @media (max-width: 1440px) {
+    .breadcrumbs {
+      width: 90%;
+    }
+  
+    .header-wrap {
+      width: 90%;
+    }
+  
+    .banner {
+      width: 100%;
+    }
+  
+    .container {
+      width: 90%;
+    }
+
+    .practice__cards {
+      height: inherit;
+    }
+  
+    .practice-item {
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 2;
+      flex-basis: 500px;
+    }
+  
+    .practice-item__info {
+      align-items: center;
+    }
+  
+    .practice-item__text {
+      text-align: center;
+    }
+  
+    .footer-wrap {
+      width: 90%;
+    }
+  
+    .feedback-wrap {
+      width: 90%;
+    }
+  
+    .feedback-form {
+      width: inherit;
+    }
+  
+    .feedback__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .feedback__img img {
+      width: 400px;
+      height: 300px;
+    }
+    
+    .cart {
+      width: 100%;
+      margin: 0px auto;
+    }
+
+    .catalog {
+      .catalog__cart {
+        display: none;
+      }
+
+      &__content {
+        width: 100%;
+      }
+
+      &__info {
+        justify-content: space-between;
+      }
+    }
+  
+  }
+
+  @media (max-width: 1130px) {
+    .catalog {
+
+      &__info {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      &__text {
+        width: inherit;
+      }
+
+      .course-price {
+        border: 1px solid $clrGray;
+        border-radius: 8px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #FBFBFB 100%);
+        padding: 24px 16px;
+        margin: 0px auto;
+        margin-bottom: 24px;
+        width: 100%;
+
+        span {
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .header-navigation {
+      display: none;
+    }
+  
+    .header-main__btn {
+      display: none;
+    }
+  
+    .header-burger {
+      display: flex;
+      align-items: center;
+    }
+  
+    .menu-popup {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $clrWhite;
+      z-index: 10;
+      display: flex;
+      transition: 0.3s;
+    }
+  
+    .menu-popup ul {
+      flex-direction: column;
+      margin-top: 24px;
+      margin-left: 32px;
+    }
+  
+    .menu-popup li {
+      margin-bottom: 24px;
+    }
+  
+    .menu-popup.open {
+      top: 120px;
+    }
+  
+    .hamb__field{
+      padding-top: 3px;
+    }
+    .hamb__field.active{
+      padding-top: 5px;
+    }
+    .hamb__field.active .bar:nth-child(1) {
+      transform: translateY(3.5px) rotate(45deg);
+    }
+  
+    .hamb__field.active .bar:nth-child(2) {
+      display: none;
+    }
+  
+    .hamb__field.active .bar:nth-child(3) {
+      transform: translateY(-3.5px) rotate(-45deg);
+    }
+  
+    body.noscroll {
+      overflow: hidden;
+    }
+
+    .about-course {
+      &__info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__link {
+        margin: 0px auto;
+        align-items: center;
+      }
+    }
+  
+    .feedback-form {
+      margin: 0px auto;
+    }
+  
+    .feedback__img {
+      display: none;
+    }
+
+    .cart {
+      .cart-table__row1 {
+        display: none !important;
+      }
+
+      .cart-table__row {
+        border-top: 1px solid $clrGray;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        .total-price {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 12px;
+        }
+      }
+
+      .cart-table__footer {
+        border-top: 1px solid $clrGray;
+      }
+    }
+  }
+  
+  @media (max-width: 930px) {
+    .courses__cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .practice__cards {
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0px auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+
+    h1 {font-size: 32px !important;}
+    h2 {font-size: 28px !important;}
+    h3 {font-size: 26px !important;}
+    h4, h5, h6 {font-size: 24px !important;}
+
+    .course-banner-mobile {
+      display: block;
+    }
+
+    .course-banner {
+      display: none;
+    }
+
+    .banner {
+      background-size: cover;
+      height: 175px;
+    }
+  
+    .banner .banner__title {
+      display: none;
+    }
+  
+    .banner a {
+      display: none;
+    }
+  
+    .banner-info-mobile {
+      display: block;
+      margin-top: -4px;
+
+      .panel {
+        margin-top: 24px;
+        padding: 16px;
+      }
+    }
+  
+    .banner-info-mobile a{
+      display: flex;
+      align-items: center;
+      color: $clrBtnMain;
+      text-decoration: 1px underline $clrBlack;
+      text-underline-offset: 4px;
+      margin-top: 8px;
+
+      span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+
+        &:hover {
+          transition: all 0.3s ease;
+          color: $clrBtnMainHover;
+        }
+
+        @media (max-width: 540px) {
+          font-size: 20px;
+        }
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  
+    .banner-info-mobile a:hover {
+      color: $clrBtnMainHover;
+      text-decoration: 1px underline $clrBtnMainHover;
+    }
+  
+    .banner-info-mobile a span{
+      margin-right: 10px;
+      color: $clrBlack;
+      text-decoration-color: $clrBlack;
+    }
+
+    .courses {
+      margin-top: 6px;
+
+      &__cards {
+        margin-top: 6px;
+      }
+
+      &__title {
+        display: none;
+      }
+
+      .courses-item {
+        height: 148px;
+
+        &__logo img{
+          height: 59px;
+        }
+
+        &:nth-child(2) {
+          .courses-item__logo img {
+            height: 28px;
+          }
+        }
+
+        &:nth-child(3) {
+          .courses-item__logo img {
+            height: 39px;
+          }
+        }
+      }
+    }
+
+    .practice {
+      margin-top: 24px;
+      
+      &__title {
+        font-size: 32px;
+        margin-bottom: 22px;
+      }
+
+      .practice-item {
+        gap: 10px;
+
+        &__text {
+          font-size: 24px;
+          margin-bottom: 4px;
+        }
+        &__more {
+          font-weight: 400;
+          font-size: 24px;
+          text-underline-offset: 4px;
+        }
+
+        .practice-img {
+          min-width: inherit;
+          min-height: inherit;
+        }
+      }
+    }
+    
+    .main-info {
+      &__banner {
+        background-size: cover;
+        height: 120px;
+      }
+    }
+
+    .catalog-courses {
+      .column-block__title {
+        margin-bottom: 32px;
+      }
+
+      .column-block__item {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .name-course{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 8px;
+        margin-bottom: 8px;
+
+        span {
+          text-align: center;
+        }
+      }
+
+      .info-course {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4px;
+      }
+    }
+
+    .feedback {
+      margin-top: 24px;
+      padding: 22px 16px;
+
+      .feedback-form {
+        &__title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+        }
+
+        &__subtitle {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+        }
+
+        &__form {
+          row-gap: 16px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &__comment {
+          textarea.input {
+            // width: 288px;
+            height: 126px;
+          }
+        }
+
+        input {
+          // width: 288px;
+        }
+
+        &__bottom {
+          button {
+            // margin-top: 13px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 540px) {
+
+    .course-banner-mobile {
+      img {
+        height: 101px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .breadcrumbs {
+      margin-top: 16px;
+      margin-bottom: 8px;
+
+      span, a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+    .about-course {
+      margin-bottom: 26px;
+    }
+
+    .about-course__link {
+      img {
+        display: none;
+      }
+
+      button {
+        width: 100%;
+        margin-right: 13px;
+      }
+    }
+
+    .menu-popup.open {
+      top: 60px;
+    }
+
+    .header {
+      height: 60px;
+
+      .header-burger {
+        &__menu li {
+          padding-left: 18px;
+        }
+      }
+
+      .header-wrap {
+        height: 60px;
+      }
+
+      .header-main {
+        width: 115px;
+
+        &__logo {
+          margin-right: 0px;
+        }
+
+        a {
+          min-width: 115px;
+          min-height: 28px;
+        }
+
+        img {
+          min-width: 115px;
+          min-height: 28px;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        min-width: 24px;
+        min-height: 24px;
+      }
+    }
+
+    .banner {
+      // margin-top: 50px;
+    }
+
+    .main-info {
+      &__banner {
+        height: 82.5px;
+      }
+    }
+
+    .practice__cards {
+      width: inherit;
+    }
+
+    .feedback {
+      .feedback-wrap {
+        margin: 0px;
+        width: 100%;
+      }
+
+      .feedback-form {
+        &__bottom {
+          // width: 288px;
+  
+          button {
+            width: 100% !important;
+          }
+        }
+
+        // &__comment {
+        //   textarea.input {
+        //     width: 288px;
+        //     height: 126px;
+        //   }
+        // }
+
+        // input {
+        //   width: 288px;
+        // }
+      }
+
+      .feedback-menu a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+
+    .footer {
+      .footer-wrap {
+        flex-direction: column;
+        row-gap: 24px;
+      }
+  
+      .footer-info {
+        grid-template-columns: 1fr;
+
+        .address {
+          order: 1;
+          margin-bottom: 10px;
+        }
+
+        .telephone {
+          order: 3;
+        }
+
+        .name {
+          order: 2;
+          margin-bottom: 22px;
+        }
+
+        .email {
+          order: 4;
+          margin: 8px 0px;
+        }
+      }
+
+      .aviterica {
+        margin-top: 24px;
+      }
+    }
+  
+    li::before {
+      top: 8px;
+      transform: inherit;
+    }
+
+    .practice__cards a {
+      width: 100%;
+      flex-basis: inherit;
+    }
+  
+    .practice-item {
+      flex-grow: inherit;
+      flex-basis: inherit;
+      width: 100%;
+      padding: 16px;
+    }
+  
+    .individual-img, .practice-img {
+      width: 140px;
+      height: 98px;
+    }
+
+    .feedback {
+      .feedback-content {
+        display: block;
+      }
+    
+      .feedback-form {
+        &__form {
+          display: flex;
+          flex-direction: column;
+        }
+  
+        &__bottom {
+          flex-direction: column;
+          row-gap: 12px;
+        }
+
+        &__agreement {
+          margin-left: 0px;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    
+      // .feedback-menu a {
+      //   white-space: inherit;
+      // }
+    }
+
+    .cart {
+      .cart-table__row {
+        align-items: flex-start;
+        row-gap: 16px;
+
+        .total-price {
+          align-items: flex-start;
+        }
+      }
+
+      .cart-table__footer {
+        align-items: flex-start;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    .catalog-courses {
+      .column-block__title {
+        margin-bottom: 10px;
+      }
+
+      .column-block__item {
+        align-items: flex-start; 
+      }
+      .column-block__item:not(:last-child) {
+        margin-bottom: 18px; 
+      }
+
+      .name-course{
+        align-items: flex-start;
+        row-gap: 0px;
+
+        span {
+          text-align: left;
+        }
+
+        .special {
+          margin-left: 0px;
+        }
+      }
+
+      .info-course {
+        align-items: flex-start;
+      }
+    }
+
+    .catalog {
+      .course-price {
+          span {
+            text-align: left;
+            font-size: 24px;
+          }
+
+          .price {
+            font-size: 32px;
+          }
+      }
+    }
+
+    .footer {
+      padding: 16px;
+
+      .footer-wrap {
+        margin: 0px;
+      }
+    }
+  }
+
+  @media (max-width: 322px) {
+    .feedback {
+
+      .feedback-form {
+        &__comment {
+          textarea.input {
+            width: 288px;
+            height: 126px;
+          }
+        }
+
+        input {
+          width: 288px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) and (max-height: 910px) {
+    .cart-down {
+      display: flex;
+    }
+  }
+  /*--------- АДАПТИВ КОНЕЦ -------------*/

@@ -1,0 +1,195 @@
+
+  /*--------- Корзина начало -------------*/
+  .cart {
+    width: 1240px;
+
+    button {
+      white-space: nowrap;
+    }
+  }
+  
+  .cart *:not(.cart-title){
+    font-size: 20px;
+  }
+  
+  .cart-title {
+    margin-bottom: 24px;
+
+    @media (max-width: 540px) {
+      margin-bottom: 16px;
+    }
+  }
+  
+  .cart-table__row {
+    display: grid;
+    grid-template-columns: 2fr 0.6fr 0.9fr 1.01fr;
+    align-items: center;
+    padding: 23px 0px;
+    column-gap: 0px;
+
+    @media (max-width: 540px) {
+      padding: 25px 0px;
+    }
+  }
+
+  .cart-table__row a{
+    padding-right: 20px;
+  }
+  
+  
+  .cart-table__row .item-name{
+    text-decoration: 1px underline #D8D8D8;
+    text-underline-offset: 4px;
+  }
+  
+  .cart-table__row .item-name:hover {
+    transition: 0.3s ease all;
+    text-decoration: 1px underline $clrBtnMainHover;
+  }
+  
+  .cart-table__row .counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    height: 48px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+  }
+  
+  .cart-table__row .counter__dec, .counter__inc {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 45px;
+    background: $clrGray;
+    font-size: 24px;
+    line-height: 24%;
+    color: #1D1D1B;
+  }
+  
+  .cart-table__row .counter__dec:hover, .counter__inc:hover {
+    transition: 0.3s ease all;
+    background-color: #E4E4E4;
+  }
+  
+  .cart-table__row .counter__dec {
+    border-right: 1px solid #D8D8D8;
+  }
+  
+  .cart-table__row .counter__inc {
+    border-left: 1px solid #D8D8D8;
+  }
+  
+  .cart-table__row .counter__count {
+    font-size: 20px;
+    color: #1D1D1B;
+  }
+  
+  .cart-table__row {
+    border-bottom: 1px solid #D8D8D8;
+
+    strong {
+      display: none;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+
+      @media (max-width: 1280px) {
+        display: inline-block;
+      }
+    }
+  }
+  
+  .cart-table__row1 {
+    padding: 0px;
+    padding-bottom: 16px;
+  }
+  
+  .cart-table__row1 div span {
+    font-weight: 700;
+  }
+  
+  .cart-table__row1 .counter {
+    height: inherit;
+    border: none;
+  }
+  
+  .cart-table__row1 .total-price-head {
+    display: block;
+    margin: 0px auto;
+  }
+  
+  .cart-table__row .total-price {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .cart-table__row .total-price span{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .cart-table__row .total-price .delete-item {
+    cursor: pointer;
+    color: $clrBtnMain;
+    text-decoration: 1px underline dotted$clrBtnMain;
+    text-underline-offset: 4px;
+  }
+  
+  .cart-table__row .total-price .delete-item:hover {
+    transition: 0.3s ease all;
+    color: $clrBtnMainHover;
+    text-decoration: 1px underline dotted$clrBtnMainHover;
+  }
+  
+  .cart-table__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .total-price {
+      flex-direction: row;
+
+      span {
+        margin-right: 8px;
+      }
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+  
+  .cart-table__footer div{
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 0px;
+
+    @media (max-width: 540px) {
+      span {
+        font-size: 20px !important;
+      }
+    }
+  }
+  
+  .cart-table__footer div .total-price{
+    font-weight: 700;
+    margin-left: 8px;
+  }
+  
+  .cart button {
+    width: 190px;
+    height: 56px;
+  }
+  
+  .cart .delete-item {
+    width: inherit;
+    height: inherit;
+  }
+  
+  /*--------- Корзина конец -------------*/
+  
