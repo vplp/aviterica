@@ -62,7 +62,7 @@
     color: $clrBtnMain;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .disabled {
@@ -99,20 +99,20 @@
     justify-content: center;
     text-transform: uppercase;
     padding: 4px 12px;
-    width: 63px;
-    height: 30px;
+    width: 55px;
+    height: 25px;
     background: $clrNew;
     border-radius: 4px;
     color: $clrWhite;
     margin-right: 8px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
 
     @media (max-width: 540px) {
-      width: 55px;
-      height: 25px;
-      font-size: 14px;
+      width: 49px;
+      height: 22px;
+      font-size: 12px;
     }
   }
   
@@ -122,50 +122,50 @@
     justify-content: center;
     text-transform: uppercase;
     padding: 4px 12px;
-    width: 54px;
-    height: 30px;
+    width: 47px;
+    height: 25px;
     background: $clrHit;
     border-radius: 4px;
     color: $clrWhite;
     margin-right: 8px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
 
     @media (max-width: 540px) {
-      width: 47px;
-      height: 25px;
-      font-size: 14px;
+      width: 43px;
+      height: 22px;
+      font-size: 12px;
     }
   }
   
   h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: $clrBlack;
-  }
-  
-  h2 {
     font-size: 36px;
     font-weight: 700;
     color: $clrBlack;
   }
   
-  h3 {
+  h2 {
     font-size: 32px;
     font-weight: 700;
     color: $clrBlack;
   }
   
-  h4 {
+  h3 {
     font-size: 28px;
+    font-weight: 700;
+    color: $clrBlack;
+  }
+  
+  h4 {
+    font-size: 24px;
     font-weight: 700;
     color: $clrBlack;
   }
   
   h5,
   h6 {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     color: $clrBlack;
   }
@@ -180,7 +180,7 @@
     width: 1340px;
     margin: 0px auto;
     margin-top: 40px;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
   
   .breadcrumbs ul {
@@ -198,14 +198,14 @@
   .breadcrumbs a {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #969696;
   }
   
   .breadcrumbs span {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #969696;
   }
   
@@ -213,7 +213,7 @@
     display: inline-block;
     content: "/";
     color: #969696;
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 5px;
     margin-right: 4px;
 
@@ -231,7 +231,7 @@
     /* display: flex; */
     align-items: center;
     position: relative;
-    padding-left: 15px;
+    padding-left: 10px;
   }
   
   li::before {
@@ -241,8 +241,8 @@
     top: 50%;
     left: 0px;
     transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
     background-color: $clrHit;
     margin-right: 8px;
@@ -314,7 +314,7 @@
     display: flex;
     justify-content: space-between;
     width: 1340px;
-    height: 120px;
+    height: 104px;
     margin: 0px auto;
     z-index: 11;
   }
@@ -331,27 +331,33 @@
     z-index: 22;
 
     a, button {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   
   .header-main__logo {
     margin-right: 40px;
   }
+
+  .header-main__btn {
+    button {
+      margin-top: 4px;
+    }
+  }
   
   .header-navigation__tel {
-    padding-top: 7px;
-    margin-right: 26px;
+    margin-right: 24px;
   }
 
   .header-navigation__login {
     button {
-      height: 52px;
+      height: 46px;
+      width: 115px;
     }
   }
   
   .header-navigation__cart {
-    margin-right: 20px;
+    margin-right: 24px;
     border-bottom: none;
 
     .cart-not-empty {
@@ -367,7 +373,7 @@
         flex-direction: row;
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
 
         span {
           margin-right: 8px;
@@ -434,9 +440,13 @@
     border-radius: 4px;
     font-size: 24px;
     color: $clrWhite;
+    width: 154px;
+    height: 46px;
 
     a {
-      font-size: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
     }
   }
   
@@ -507,12 +517,13 @@
       }
 
       @media (max-width: 767px) {
-        justify-content: flex-start;
+        // justify-content: flex-start;
       }
       
       @media (max-width: 540px) {
-        column-gap: 30px;
+        column-gap: 38px;
         margin-left: -2px;
+        justify-content: flex-start;
       }
     }
 
@@ -528,7 +539,7 @@
 
     span {
       position: relative;
-      margin-right: 87px;
+      margin-right: 121px;
       padding-left: 14px;
 
       @media (max-width: 1440px) {
@@ -548,6 +559,11 @@
       border-radius: 50%;
       background-color: #54b8ea;
       margin-right: 8px;
+
+      @media (max-width: 540px) {
+        width: 6px;
+        height: 6px;
+      }
   }
 
   @media (max-width: 767px) {
@@ -627,24 +643,25 @@
   &__count {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
+    margin-bottom: 6px;
 
     span {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 
   &__price {
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 14px;
 
     span {
       font-style: normal;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 }

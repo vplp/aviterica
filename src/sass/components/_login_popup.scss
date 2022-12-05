@@ -1,5 +1,5 @@
 .popup *:not(.popup-order__title, .callback-popup__title, .success-popup__title) {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .popup {
@@ -118,7 +118,7 @@
             p {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 margin-bottom: 5px;
             }
         }
@@ -129,7 +129,7 @@
             p {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 margin-bottom: 5px;
             }
 
@@ -142,14 +142,14 @@
             &__title>span {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
             }
 
             &__title a span {
                 color: $clrBtnMain;
                 font-style: normal;
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 border-bottom: 1px dashed $clrBtnMain;
 
                 &:hover {
@@ -171,7 +171,7 @@
                 align-items: center;
                 padding: 13px 40px 14px;
                 width: 143px;
-                height: 56px;
+                height: 46px;
 
                 @media (max-width: 676px) {
                     width: 100%;
@@ -185,7 +185,7 @@
                 align-items: center;
                 padding: 13px 40px 14px;
                 width: 291px;
-                height: 56px;
+                height: 46px;
 
                 @media (max-width: 676px) {
                     width: 100%;

@@ -17,7 +17,7 @@
                 <a href="/catalog.php" class="banner__follow">
                     <span>Курсы полезные всем</span>
                     <!-- <img src="/assets/img/icons/arrow.svg" alt=""> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <svg class="img-arrow_svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <circle class="img-arrow" cx="20" cy="20" r="20" fill="#E30613"/>
                         <path d="M14 20H26" stroke="white" stroke-width="2" stroke-linecap="round"/>
                         <path d="M21 15L26 20L21 25" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -32,7 +32,7 @@
                 <a href="/catalog.php" class="">
                     <span>Курсы полезные всем</span>
                     <!-- <img src="/assets/img/icons/arrow.svg" alt=""> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <svg class="img-arrow_svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                         <circle class="img-arrow" cx="20" cy="20" r="20" fill="#E30613"/>
                         <path d="M14 20H26" stroke="white" stroke-width="2" stroke-linecap="round"/>
                         <path d="M21 15L26 20L21 25" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -94,7 +94,7 @@
                             </div>
                         </a>
                         <a href="practice.php">
-                            <div class="practice-item">
+                            <div class="practice-item item2">
                                 <div class="practice-item__logo">
                                     <img src="/assets/img/icons/practice2.svg" alt="Практика на реальном пульте" class="practice-img">
                                 </div>

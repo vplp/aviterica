@@ -20,7 +20,7 @@
 .catalog__text p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
 }
 
@@ -33,19 +33,42 @@
     flex-direction: column;
     padding: 0 32px;
     border-left: 1px solid $clrGray;
+
+    &__title_desc {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &__title_mobile {
+      display: none;
+      margin: 0px auto;
+
+      @media (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (max-width: 540px) {
+        margin: 0px;
+      }
+    }
 }
 
 .course-price .time_title {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
 }
 
 .course-price .time {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   margin-bottom: 12px;
 }
@@ -53,9 +76,10 @@
 .course-price .price {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 120%;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  margin-top: -3px;
   white-space: nowrap;
 }
 
@@ -81,7 +105,7 @@
     background: #EFF8FC;
     border-radius: 8px;
     margin-top: 24px;
-    min-height: 82px;
+    min-height: 72px;
     max-width: 1000px;
 
     @media (max-width: 540px) {
@@ -90,19 +114,37 @@
     }
 }
 
+.panel_desc {
+  @media (max-width: 540px) {
+    display: none;
+  }
+}
+.panel_mobile {
+  display: none;
+  @media (max-width: 540px) {
+    display: block;
+  }
+}
+
 .panel p {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
+  text-align: center;
 
   @media (max-width: 540px) {
-    font-size: 20px;
+    text-align: center;
+    font-size: 16px;
     line-height: 125%;
   }
 }
 
 .catalog__title {
   margin-bottom: 24px;
+
+  @media (max-width: 540px) {
+    margin-bottom: 17px;
+  }
 }
 
 .catalog__cart {
@@ -114,10 +156,11 @@
   align-items: flex-start;
   padding: 16px 24px 24px;
   min-width: 276px;
+  max-width: 276px;
   //height: 380px;
   background: #F0F0F0;
   border-radius: 8px;
-  margin-left: 60px;
+  margin-left: 64px;
 
   @media (max-width: 1320px) {
     display: none;
@@ -127,14 +170,14 @@
 .catalog__cart .total-price__title {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   white-space: nowrap;
 }
 
 .catalog__cart .total-price__sum {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .count-courses {
@@ -153,7 +196,7 @@
   .cart-is-empty {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -186,8 +229,7 @@
 }
 
 .cart-item__btn-close {
-  // width: 12px;
-  // min-width: 12px;
+  padding-top: 2px;
 }
 
 .img-close {
@@ -209,7 +251,7 @@
   width: 100%;
 
   button {
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
   }
 }

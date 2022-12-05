@@ -22,17 +22,23 @@
                                         Для корректной работы обучающей программы вам потребуется следующее оборудование:
                                     </p>
                                     <p>Компьютер или планшет с выходом в Интернет. Колонки или наушники (если ваш компьютер не оборудован ими)Микрофон и видеокамера (если ваш компьютер не оборудован ими) для тех, кто проходит обучение на курсах для железнодорожных кассиров. Они потребуются для сдачи экзамена.</p>   
+                                    <div class="panel panel_desc">
+                                        <p>Вы можете выбрать одновременно несколько курсов. 
+                                        <br>Чем больше курсов в заказе, тем меньше цена каждого из них!</p>
+                                    </div>
                                 </div>
                                 <div class="course-price">
-                                    <span class="time_title">Срок доступа</span>
-                                    <span class="time">20 дней</span>
+                                    <div class="course-price__title_desc">
+                                        <span class="time_title">Срок доступа</span>
+                                        <span class="time">20 дней</span>
+                                    </div>
+                                    <div class="course-price__title_mobile">
+                                        <span class="time_title">Срок доступа: </span>
+                                        <span class="time">&nbsp;20 дней</span>
+                                    </div>
                                     <span class="price">3700 руб.</span>
                                     <span class="choose-course"><button data-action="choose-product" data-id-product="1">Выбрать курс</button></span>
                                 </div>
-                            </div>
-                            <div class="panel">
-                                <p>Вы можете выбрать одновременно несколько курсов. 
-                                   <br>Чем больше курсов в заказе, тем меньше цена каждого из них!</p>
                             </div>
                         </div>
                         <div class="catalog__cart">
@@ -53,7 +59,10 @@
                         </a>
                     </div>
                     </div>
-                   
+                    <div class="panel panel_mobile">
+                        <p>Вы можете выбрать одновременно несколько курсов. 
+                        <br>Чем больше курсов в заказе, тем меньше цена каждого из них!</p>
+                    </div>
                 </div>
             </main>
         

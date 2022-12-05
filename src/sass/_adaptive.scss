@@ -96,9 +96,9 @@
         border: 1px solid $clrGray;
         border-radius: 8px;
         background: linear-gradient(180deg, #FFFFFF 0%, #FBFBFB 100%);
-        padding: 24px 16px;
+        padding: 16px;
         margin: 0px auto;
-        margin-bottom: 24px;
+        margin-bottom: 18px;
         width: 100%;
 
         span {
@@ -145,7 +145,7 @@
     }
   
     .menu-popup.open {
-      top: 120px;
+      top: 104px;
     }
   
     .hamb__field{
@@ -230,10 +230,15 @@
   
   @media (max-width: 767px) {
 
-    h1 {font-size: 32px !important;}
+    h1 {font-size: 30px !important;}
     h2 {font-size: 28px !important;}
     h3 {font-size: 26px !important;}
     h4, h5, h6 {font-size: 24px !important;}
+
+    .img-arrow_svg {
+      width: 32px;
+      height: 32px;
+    }
 
     .course-banner-mobile {
       display: block;
@@ -318,7 +323,7 @@
       }
 
       .courses-item {
-        height: 148px;
+        height: 132px;
 
         &__logo img{
           height: 59px;
@@ -421,7 +426,7 @@
         &__subtitle {
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 16px;
         }
 
         &__form {
@@ -461,13 +466,13 @@
     }
 
     .breadcrumbs {
-      margin-top: 16px;
+      margin-top: 12px;
       margin-bottom: 8px;
 
       span, a {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
 
@@ -581,7 +586,7 @@
       .feedback-menu a {
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
       }
     }
 
@@ -605,12 +610,12 @@
 
         .name {
           order: 2;
-          margin-bottom: 22px;
+          margin-bottom: 16px;
         }
 
         .email {
           order: 4;
-          margin: 8px 0px;
+          margin: 5px 0px;
         }
       }
 
@@ -654,7 +659,7 @@
   
         &__bottom {
           flex-direction: column;
-          row-gap: 12px;
+          row-gap: 18px;
         }
 
         &__agreement {
@@ -674,7 +679,7 @@
     .cart {
       .cart-table__row {
         align-items: flex-start;
-        row-gap: 16px;
+        row-gap: 12px;
 
         .total-price {
           align-items: flex-start;
@@ -724,11 +729,11 @@
       .course-price {
           span {
             text-align: left;
-            font-size: 24px;
+            font-size: 20px;
           }
 
           .price {
-            font-size: 32px;
+            font-size: 28px;
           }
       }
     }

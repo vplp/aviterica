@@ -61,7 +61,7 @@ button a:focus {
   left: 40px;
   top: 30px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .banner__follow {
@@ -77,9 +77,9 @@ button a:focus {
 
 .banner__follow span {
   color: $clrBlack;
-  border-bottom: 1px solid $clrBlack;
+  border-bottom: 1px solid rgba($clrBlack, 0.3);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 10px;
 
   &:hover {
@@ -94,7 +94,7 @@ button a:focus {
 .courses__title {
   text-align: center;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .courses__cards {
@@ -128,16 +128,16 @@ button a:focus {
 
     a {
       font-weight: 400;
-      font-size: 20px;
-      border-bottom: 1px solid $clrBlack;
+      font-size: 16px;
+      border-bottom: 1px solid rgba($clrBlack, 0.3);
     }
 
     a:hover {
-      border-bottom: 1px solid $clrBtnMainHover;
+      border-bottom: 1px solid rgba($clrBtnMainHover, 0.3);
     }
 
     @media (max-width: 540px) {
-      margin-top: 22px;
+      margin-top: 14px;
     }
   }
 }
@@ -151,12 +151,12 @@ button a:focus {
   margin-bottom: 40px;
   font-style: italic;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 48px;
 }
 
 .practice-item {
   width: 100%;
-  padding: 51px 42px;
+  padding: 24px 40px;
   display: flex;
   gap: 38px;
   background: #F0F0F0;
@@ -173,7 +173,7 @@ button a:focus {
     
     div {
       @media (max-width: 540px) {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 125%;
 
         br {
@@ -184,7 +184,7 @@ button a:focus {
 
     span {
       @media (max-width: 540px) {
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
@@ -206,23 +206,32 @@ button a:focus {
   display: flex;
   justify-content: center;
   gap: 17px;
-  height: 246px;
+  height: 198px;
 
   a {
     display: flex;
     flex-basis: 660px;
+
+    @media (max-width: 930px) {
+      flex-basis: 436px;
+    }
   }
 }
 
 .practice-item__info {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
+
+  @media (max-width: 540px) {
+    padding-top: 0px;
+  }
 }
 
 .practice-item__text {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 24px;
 }
 
@@ -230,7 +239,7 @@ button a:focus {
   white-space: nowrap;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px; 
+  font-size: 16px; 
   border-bottom: none;
   text-decoration: underline 1px;
   text-underline-offset: 7px;
@@ -249,7 +258,7 @@ button a:focus {
 .feedback {
   background: #F6F6F6;
   margin-top: 40px;
-  padding: 40px 0px;
+  padding: 32px 0px;
 }
 
 .feedback__img {
@@ -281,20 +290,20 @@ button a:focus {
 .feedback-form__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  margin-bottom: 8px;
+  font-size: 36px;
+  margin-bottom: 4px;
 }
 
 .feedback-form__subtitle {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .feedback-form__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 24px;
+  row-gap: 16px;
   column-gap: 16px;
   margin-top: 24px;
 
@@ -304,7 +313,7 @@ button a:focus {
 
   .invalid-feedback {
     position: absolute;
-    bottom: -20px;
+    bottom: -16px;
   }
 
   @media (max-width: 540px) {
@@ -317,16 +326,25 @@ button a:focus {
 }
 
 .feedback-form__bottom {
+  padding-top: 12px;
   grid-column: 1 / 3;
   display: flex;
-  align-items: inherit;
+  align-items: center;
   // margin-top: -6px;
 
   button {
-    min-width: 172px !important;
-    height: 51px !important;
+    min-width: 153px !important;
+    height: 46px !important;
     margin-right: 25px;
-    font-size: 20px;
+    font-size: 16px;
+
+    @media (max-width: 540px) {
+      margin-right: 0px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    padding-top: 4px;
   }
 }
 
@@ -350,7 +368,6 @@ button a:focus {
   background-repeat: no-repeat;
   background-position: center center;
   box-sizing: border-box;
-  margin-top: 4px;
   margin-right: 5px;
 }
 
@@ -374,8 +391,8 @@ button a:focus {
   font-weight: 400;
   font-size: 20px;
 
-  span {
-    font-size: 16px;
+  span, a {
+    font-size: 14px;
   }
 }
 
@@ -402,24 +419,28 @@ button a:focus {
 .input-title {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 .input {
   border: 1px solid #d8d8d8;
   background-color: $clrWhite;
-  height: 56px;
+  height: 43px;
   width: 100%;
   padding: 16px 8px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   outline: none;
 }
 
 .feedback-menu {
-  margin-top: 48px;
+  margin-top: 38px;
   padding-left: 2px;
+
+  @media (max-width: 540px) {
+    margin-top: 25px;
+  }
 }
 
 .feedback-menu ul {
@@ -435,7 +456,7 @@ button a:focus {
   align-items: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -459,7 +480,7 @@ button a:focus {
   box-shadow: 0px -12px 24px 0px #0000000d;
   width: 100%;
   background-color: $clrWhite;
-  padding: 37px 0px;
+  padding: 31px 0px;
 }
 
 .footer-wrap {
@@ -472,14 +493,18 @@ button a:focus {
 .footer-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 134px;
+  column-gap: 182px;
+
+  @media (max-width: 767px) {
+    column-gap: 102px;
+  }
 }
 
 .footer-info div,
 a {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-blockx {
@@ -487,6 +512,10 @@ a {
   height: 56px;
   background-color: #d9d9d9;
   margin-top: -8px;
+
+  @media (max-width: 540px) {
+    margin-top: -16px;
+  }
 }
 
 /*--------- INDEX END -------------*/

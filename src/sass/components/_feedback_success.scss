@@ -2,12 +2,16 @@
     position: absolute;
     margin-left: -2px;
     width: 665px;
-    height: 580px;
+    height: 500px;
     background-color: #F6F6F6;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 50;
+
+    @media (max-width: 1280px) {
+        height: 620px;
+    }
 
     .content {
         display: flex;
@@ -31,7 +35,7 @@
     &__title {
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 8px;
         text-align: center;
     }
@@ -39,7 +43,7 @@
     &__text {
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 16px;
         max-width: 600px;
         text-align: center;
         margin-bottom: 16px;
@@ -48,7 +52,7 @@
     &__close {
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 16px;
         color: $clrBtnMain; 
     }
 
@@ -72,7 +76,7 @@
     cursor: pointer;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     color: $clrBtnMain; 
     border-bottom: 1px dashed rgba($clrBtnMain, 0.3);
 }

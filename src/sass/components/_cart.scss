@@ -1,7 +1,7 @@
 
   /*--------- Корзина начало -------------*/
   .cart {
-    width: 1240px;
+    width: 1164px;
 
     button {
       white-space: nowrap;
@@ -9,7 +9,7 @@
   }
   
   .cart *:not(.cart-title){
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .cart-title {
@@ -28,7 +28,7 @@
     column-gap: 0px;
 
     @media (max-width: 540px) {
-      padding: 25px 0px;
+      padding: 14px 0px;
     }
   }
 
@@ -40,6 +40,10 @@
   .cart-table__row .item-name{
     text-decoration: 1px underline #D8D8D8;
     text-underline-offset: 4px;
+
+    @media (max-width: 540px) {
+      font-size: 20px;
+    }
   }
   
   .cart-table__row .item-name:hover {
@@ -51,8 +55,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 160px;
-    height: 48px;
+    width: 145px;
+    height: 44px;
     border: 1px solid #D8D8D8;
     border-radius: 4px;
   }
@@ -77,14 +81,16 @@
   
   .cart-table__row .counter__dec {
     border-right: 1px solid #D8D8D8;
+    font-size: 24px !important;
   }
   
   .cart-table__row .counter__inc {
     border-left: 1px solid #D8D8D8;
+    font-size: 24px !important;
   }
   
   .cart-table__row .counter__count {
-    font-size: 20px;
+    font-size: 16px;
     color: #1D1D1B;
   }
   
@@ -182,8 +188,8 @@
   }
   
   .cart button {
-    width: 190px;
-    height: 56px;
+    width: 162px;
+    height: 46px;
   }
   
   .cart .delete-item {

@@ -1,7 +1,7 @@
 
   /*--------- SCHOOL START -------------*/
   .main-info *:not(h1, h2, h3, h4, h5, h6) {
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .block1,
@@ -15,7 +15,7 @@
 
   .main-info {
     .block1 ol {
-      padding-left: 12px;
+      padding-left: 10px;
     }
 
     h2, h4 {
@@ -31,7 +31,7 @@
     }
 
     .block3 ul {
-      padding-left: 12px;
+      padding-left: 10px;
       margin-bottom: 14px;
     }
   }
@@ -55,8 +55,12 @@
   
   .main-info ol li {
     margin-bottom: 8px;
-    padding-left: 26px;
+    padding-left: 20px;
     position: relative;
+
+    @media (max-width: 540px) {
+      padding-left: 18px;
+    }
   }
   
   .main-info ul li {

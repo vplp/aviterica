@@ -1,6 +1,6 @@
 /*--------- COURSE START -------------*/
 .about-course {
-    margin-bottom: 33px;
+    margin-bottom: 45px;
 
     .course-banner {
       height: 384px;
@@ -14,14 +14,14 @@
   .about-course .title {
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 24px;
   }
   
   .about-course__text * {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 12px;
   }
 
@@ -29,8 +29,15 @@
     padding-top: 2px;
   }
 
+  .about-course__text span {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
   .about-course__text ul {
-    margin-left: 12px;
+    margin-left: 10px;
+    padding-top: 4px;
   }
   
   .about-course__info {
@@ -53,10 +60,10 @@
 
     button {
       width: 216px;
-      height: 51px;
-      font-size: 20px;
-      margin-top: -4px;
-      margin-right: -2px;
+      height: 46px;
+      font-size: 16px;
+      margin-top: -6px;
+      margin-left: 2px;
     }
   }
   

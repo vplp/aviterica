@@ -296,9 +296,13 @@ function renderProducts(productsArray) {
                 <div class="${item.hit}">${item.hit}</div>
             </div>
           </div>
-          <div class="info-course">
+          <div class="info-course_desc">
               <span class="price">${item.price} руб.</span>
               <button class="select-course" data-action="choose-product" data-id-product="${item.id}">Выбрать курс</button>
+          </div>
+          <div class="info-course_mobile">
+            <span class="price">${item.price} руб.</span>
+            <button class="select-course" data-action="choose-product" data-id-product="${item.id}">Выбрать курс</button>
           </div>
         </div>`;
 
